@@ -11,20 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Covert Patient Weight"
-        android:textColor="#3F51B5"
+        android:text="@string/covert_patient_weight"
+        android:textColor="@color/text_color"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/txtWeight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="@dimen/standard_margin"
         android:ems="10"
+        android:gravity="center"
+        android:hint="@string/number_only"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,16 +44,18 @@
 
         <RadioButton
             android:id="@+id/poundsToKilo"
+            android:layout_marginTop="@dimen/standard_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Convert Pounds to Kilogram"
+            android:text="@string/convert_pounds_to_kilogram"
             android:textSize="25sp" />
 
         <RadioButton
             android:id="@+id/kiloToPounds"
+            android:layout_marginTop="@dimen/standard_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Convert Kilogram to Pounds"
+            android:text="@string/convert_kilogram_to_pounds"
             android:textSize="25sp" />
 
     </RadioGroup>
@@ -61,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#3F51B5"
+        android:textColor="@color/text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
